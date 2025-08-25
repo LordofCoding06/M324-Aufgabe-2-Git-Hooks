@@ -1,3 +1,7 @@
 #!/usr/bin/env sh
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-exec node "$SCRIPT_DIR/commit-msg.js" "$1"
+
+# Absoluten Pfad zum aktuellen Script-Verzeichnis ermitteln
+SCRIPT_DIR="$(cd "$(dirname -- "$0")" && pwd)"
+
+# commit-msg.js mit Übergabe des ersten Arguments starten
+node "$SCRIPT_DIR/commit-msg.js" "$1"
