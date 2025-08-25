@@ -2,8 +2,7 @@
 ## Antworten Aufgabe 2
 
 **Was gewinnen wir mit dem Commit-Hook?**  
-Wir stellen sicher, dass alle Commits eine einheitliche Struktur haben und eine Ticketnummer enthalten.
+Er sorgt dafür, dass alle Commit-Nachrichten konsistent aufgebaut sind und zwingt zur Angabe einer Ticketnummer.
 
 **Welche Probleme seht ihr mit dieser Lösung?**  
-Entwickler können den Hook umgehen oder deaktivieren. Außerdem kann es zu Problemen auf unterschiedlichen Betriebssystemen kommen.
-Es wär auch schöner wenn man Regeln in einer Pipeline macht.
+Der Hook lässt sich von Entwicklern bewusst umgehen oder ausschalten. Zusätzlich können Unterschiede zwischen Betriebssystemen zu Komplikationen führen. Eleganter wäre es, solche Regeln zentral über eine Pipeline durchzusetzen.
