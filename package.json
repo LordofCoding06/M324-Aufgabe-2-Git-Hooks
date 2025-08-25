@@ -1,0 +1,14 @@
+{
+  "name": "aufgabe-2-git-hooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup:git-hooks": "git config core.hooksPath .git-hooks && (chmod +x .git-hooks/commit-msg .git-hooks/commit-msg.js || exit 0)",
+    "postinstall": "npm run setup:git-hooks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
